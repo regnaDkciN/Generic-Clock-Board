@@ -22,6 +22,7 @@ The motivation for this board was gzumwalt's excellent Geneva Clock which was or
 - 1 **Optional** [Adafruit DS3231 Real Time Clock](https://www.adafruit.com/product/3013).  Used to provide battery backed time in case power is lost or an internet connection cannot be made.
 - 1 **Optional**[Right Angle Tactile Pushbutton Switch](https://www.amazon.com/dp/B008DS16PO?psc=1&ref=ppx_yo2ov_dt_b_product_details).  Pushbutton for general clock use.
 - 1 **Optional** [ULN2003 High Voltage Driver](https://www.amazon.com/ALLECIN-ULN2003-ULN2003APG-High-Voltage-High-Current/dp/B0CBM23ZJ3/ref=sr_1_5?sr=8-5).  Used to drive a 5 volt stepper motor.
+- 1 **Optional** 10nf capacitor.  Used for ULN2003 bypass.
 - 4 **Optional** LED (color as desired).  Used to display stepper motor phase selection, which might be useful for debugging stepper.  Otherwise, not really needed.
 - 4 **Optional** 10K resistors.  Used only if the optional LEDs are included.
 - 1 **Optional** [5 Pin JST XH Male Connector](https://www.amazon.com/dp/B09JP2D9BH?ref=ppx_yo2ov_dt_b_product_details).  Used to connect to the stepper motor, if used.
