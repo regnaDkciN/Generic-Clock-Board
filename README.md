@@ -8,7 +8,7 @@ An ESP32 based PC board that is specifically designed to support electronic cloc
 - RGB LED for status display.
 - Pushbutton input for general clock use.
 - Optional 2 auxiliary I/O which can be individually used as inputs or outputs as needed.
-- All parts are through hole.
+- All components are through hole for easy construction.
 - Supporting Arduino IDE board driver written in C++.
 
 The motivation for this board was gzumwalt's excellent Geneva Clock which was originally published on printables and cults3d:
@@ -54,7 +54,7 @@ This enum is used to select the speed profile that will be used for stepper move
 ### Constructor
 Constructs a class instance, initializes board hardware, and initializes instance variables.
 #### Constructor Arguments:
- - *__rapidSecondsPerRev__*  - (uint32_t) Specifies the number of seconds it takes the stepper to make one full revolution of its outupt shaft.  For the 28BYJ-48 stepper motor, a good range is normally between 6 and 10 seconds.
+ - *__rapidSecondsPerRev__*  - (uint32_t) Specifies the number of seconds it takes the stepper to make one full revolution of its output shaft.  For the 28BYJ-48 stepper motor, a good range is normally between 6 and 10 seconds.
 - *__fullStepsPerRev__* - (uint32_t) Specifies the number of FULL steps per revolution of the stepper motor's output shaft.  For the   28BYJ-48 the value is 2048.
 - *__stepperPinsReversed__* - (bool) Specifies the whether or not the stepper turns clockwise when a positive step value is commanded.  Set to 'true' if a positive step value causes counterclockwise movement.  Set to 'false' otherwise.
 - *__stepperHalfStepping__* - (bool) Specifies whether half stepping is to be used.  If 'true', then half stepping is used, which will cause the number of steps per rev of the stepper to double.  For example, the 28BYJ-48 stepper will take 4096 steps per rev if this value is set to 'true'.  In most cases, use of half stepping is a good choice.
@@ -67,7 +67,7 @@ Constructs a class instance, initializes board hardware, and initializes instanc
 // the 28BYJ-48 stepper motor is usually in the range of 6 to 10 seconds.
 const uint32_t RAPID_SECONDS_PER_REV = 8;
 
-// 28byj-48 has 2048 full steps per full rev of the output shaft (4096 half steps).
+// 28BYJ-48 has 2048 full steps per full rev of the output shaft (4096 half steps).
 const uint32_t FULL_STEPS_PER_REV = 2048;
 
 // This stepper needs to have the phases reversed.  Set to 'false' if stepper runs
